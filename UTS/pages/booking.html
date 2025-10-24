@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CW | Seats</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body class="font-open-sans">
+    <!-- buat navbar bang -->
+    <div id="navbar-container"></div>
+    <br /><br /><br />
+
+    <div id="modal-history-booking"></div>
+
+    <form method="post">
+      <!-- date picker container -->
+      <div class="date-picker-container">
+        <h3 class="headline-section">Rencanakan Tanggalmu</h3>
+        <div id="date-picker" class="date-picker-inner"></div>
+      </div>
+
+      <!-- select kota -->
+      <div class="cities-container-outer">
+        <h3 class="headline-section">Pilih Kota</h3>
+
+        <div class="btn-city">Malang</div>
+      </div>
+
+      <!-- ini layout grid bang -->
+      <div class="section-main-booking">
+        <!-- column generate cabang -->
+        <div class="col-cabang">
+          <h3 class="headline-section">Outlet</h3>
+
+          <div id="cabang-layout" class="cabang-layout"></div>
+        </div>
+
+        <!-- column generate seats per cabang -->
+        <div class="col-seats">
+          <h3 class="headline-section">Kursi & Meja</h3>
+
+          <div id="seats-layout" class="seats-layout"></div>
+          <div id="info-available-seat" class="info-available-seat"></div>
+        </div>
+
+        <!-- column facility and name -->
+        <div class="col-facility">
+          <h3 class="headline-section">Fasilitas</h3>
+
+          <div id="facility-cards" class="facility-card-list"></div>
+
+          <div id="container-confirm-pesanan">
+            <h3 class="headline-section">Detail Pesanan</h3>
+            <div class="container-menu-pesanan">
+              <label for="menu-pesanan">📕 Menu Pesanan & Catatan</label>
+              <input type="text" id="menu-pesanan" placeholder="Americano" />
+              <textarea
+                rows="7"
+                placeholder="10 Shots"
+                id="menu-catatan"
+              ></textarea>
+            </div>
+            <button id="btn-submit" class="btn-submit-style">Booking 🙌🏻</button>
+
+            <!-- <h3 class="headline-section">Konfirmasi Pesanan</h3>
+            <p>ID BOOKING : BK-12812y1281</p> -->
+          </div>
+        </div>
+      </div>
+    </form>
+    <br />
+
+    <script src="../jquery-3.7.1.js"></script>
+    <script src="../js/booking.js"></script>
+  </body>
+</html>
